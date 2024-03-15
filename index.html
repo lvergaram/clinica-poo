@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Mishucito</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+    <h1>Clinica MISHU</h1>
+    
+    <header>
+        <div class="header-left">
+            <h2>Pacientes</h2>    
+            <p>Hay <span></span> pacientes en total</p>
+        </div>
+        <div class="header-right">
+            <button id="newPatientBtn" class="btn-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                <path d="M9 12h6" />
+                <path d="M12 9v6" />
+              </svg>
+            Nuevo Paciente</button>
+        </div>
+
+    </header>
+
+    <section class="card-container" id="cardContainer">
+        
+        <article class="card">
+            <p class="card-rut">17.635.243-4</p>
+            <p class="card-name">Luis Vergara M.</p>
+            <p class="card-age">33 Años</p>
+            <p class="card-diagnosis">ta chiquito Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione dignissimos corrupti earum, maxime sequi!</p>
+            <button class="card-button">ingreso</button>
+        </article>
+
+        <article class="card">
+            <p class="card-rut">17.635.243-4</p>
+            <p class="card-name">Luis Vergara M.</p>
+            <p class="card-age">33 Años</p>
+            <p class="card-diagnosis">ta chiquito Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione dignissimos corrupti earum, maxime sequi!</p>
+            <button class="card-button btn-success">Alta</button>
+        </article>
+
+        <article class="card">
+            <p class="card-rut">17.635.243-4</p>
+            <p class="card-name">Luis Vergara M.</p>
+            <p class="card-age">33 Años</p>
+            <p class="card-diagnosis">ta chiquito Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione dignissimos corrupti earum, maxime sequi!</p>
+            <button class="card-button btn-warning">Diag</button>
+        </article>
+    </section>
+
+
+    <section class="hidden" id="addPacientModal">
+        <form action="">
+            <div class="inputGroup">
+                <label for="rutInput">Rut</label>
+                <input type="text" id="rutInput">
+            </div>
+            <div class="inputGroup">
+                <label for="nameInput">Nombre</label>
+                <input type="text" id="nameInput">
+            </div>
+            <div class="inputGroup">
+                <label for="ageInput">Edad</label>
+                <input type="text" id="ageInput">
+            </div>
+
+            <input type="submit">
+
+        </form>
+    </section>
+
+
+
+    <script src="./src/js/main2.js"></script>
+
+</body>
+</html>

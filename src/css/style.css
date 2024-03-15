@@ -1,0 +1,165 @@
+:root{
+    --primary-color: #141625;
+    --secundary-color: #1f213a;
+    --light-color: #ffffff;
+    --acent-color: #7c5df9;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    width: 100vw;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    width: 80vw;
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .header-right{
+
+} */
+
+.btn-xl{
+    display: flex;
+    align-items: center;
+    background-color: var(--acent-color);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    border: none;
+    
+}
+
+.card-container{
+    width: 80vw;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+
+.card{
+    background-color: var(--secundary-color);
+    color: var(--light-color);
+    display: flex;
+    padding: 1rem;
+    /* justify-content: space-between; */
+    border-radius: 15px;
+    height: 5rem;
+    align-items: center;
+}
+
+.card p{
+    overflow: hidden;
+    margin-right: 1rem;
+    
+    
+}
+
+.card-rut{
+    width: 15%;
+    font-weight: 700;
+}
+
+.card-name{
+    width: 15%;
+    font-weight: 300;
+    opacity: 80%;
+}
+
+.card-age{
+    width: 10%;
+    font-weight: 300;
+    opacity: 80%;
+}
+
+
+.card-diagnosis{
+    width: 45%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 300;
+    opacity: 80%;
+}
+
+.card-button{
+    margin-left: auto   ;
+    width: 12%;
+    border-radius: 5px;
+    height: 2.5rem;
+    border: none;
+    background-color: #ffffff20;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem;
+    
+}
+
+.btn-success{
+    background-color: #46dbae20;
+    color: #46dbae;
+}
+
+.btn-warning{
+    background-color: #ff940020;
+    color: #ff9400;
+}
+
+
+/* MODAL */
+#addPacientModal{
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background-color: var(--acent-color);
+    right: 0;
+    top: 20%;
+    padding: 2rem;
+    border-radius: 2rem 0 0 2rem ;
+    transition: display 2s ease-in;
+}
+
+#addPacientModal form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+#addPacientModal form input{
+    border-radius: 5px;
+    border: none;
+    height: 2rem;
+    width: 100%;
+    
+}
+
+#addPacientModal form label{
+    display: block;
+}
+
+/* UTILITIES */
+
+.hidden{
+    transition: display 2s ease-in;
+    display: none;
+}
